@@ -37,17 +37,17 @@ console.log(savesPrimes);
 // array.
 
 const savesPrimes2 = (number) => {
-    let primes = [];
-    for (let i = 2, s = Math.sqrt(number); i <= s; i++)
-      if (number % i === 0) {
-        return false;
-      } else {
-        return primes.push(i);
-      }
-    console.log(primes);
-  };
-  
-  savesPrimes2(arr);
+  let primes = [];
+  for (let i = 2, s = Math.sqrt(number); i <= s; i++)
+    if (number % i === 0) {
+      return false;
+    } else {
+      return primes.push(i);
+    }
+  console.log(primes);
+};
+
+savesPrimes2(arr);
 
 /** 3 Creați o funcție care stochează intr-un array doar strings dintr-un array primit ca si parametru. Parcurgeți array-ul folosind “forEach”.
  *  Afișați rezultatul în consola.
@@ -63,13 +63,13 @@ saveStrings([‘1’,’2’,’3’,’4’]) -> [‘1’,’2’,’3’,’4�
 const array = [1, "1", "salut", 2, 6, true, "true"];
 const result = [];
 
-array.forEach( (thisArg) => {
-    if (typeof thisArg === "string") {
-        result.push(thisArg);
-    } else {
-        console.log("Not a string");
-    }
-})
+array.forEach((thisArg) => {
+  if (typeof thisArg === "string") {
+    result.push(thisArg);
+  } else {
+    console.log("Not a string");
+  }
+});
 
 console.log(result);
 
@@ -82,15 +82,13 @@ Ex:
  * 
  */
 
-let addDigits = [1,5,2,3]
+let addDigits = [1, 5, 2, 3];
 
-    function addOddNumbers(number) {
-        for (let i = 0; i < number.length; i++) {
-            
-        }
-    }
+function addOddNumbers(number) {
+  for (let i = 0; i < number.length; i++) {}
+}
 
-    addOddNumbers(...addDigits);
+addOddNumbers(...addDigits);
 
 /** 5 Creați un switch cu cel puțin 5 case-uri din care cel puțin 2 să aibă același rezultat, după exemplul prezentat la curs.
  */
@@ -120,4 +118,4 @@ switch (day) {
 
   default:
     console.log("No time to relax this week");
-};
+}
