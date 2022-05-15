@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+  margin: 10px 0;
+  text-decoration: underline;
+}
+
+.exercise-card {
+  border: 1px solid;
+  height: 310px;
+  text-align: center;
+  padding: 20px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product {
+  height: 250px;
+  width: 250px;
+  border: 1px solid;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product-image {
+  width: 95%;
+  height: 80%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.category-banner {
+  background-color: rgba(82, 11, 82, 0.89);
+  color: white;
+  position: absolute;
+  top: 26px;
+  left: -12px;
+  transform: rotate(-45deg);
+  width: 100px;
+  height: 22px;
+  border-radius: 15px;
+  font-size: 18px;
+}
+
+.my-name {
+  font-size: 50px;
+  font-style: italic;
+  font-family: cursive;
+  margin: 50px 0;
+  cursor: pointer;
+  /* color: rgb(68, 68, 168); */
+}
+.my-name.color {
+  color: rgb(53, 53, 196);
+}
+
+.loading-status {
+  margin: 100px 0;
+  font-size: 35px;
+}

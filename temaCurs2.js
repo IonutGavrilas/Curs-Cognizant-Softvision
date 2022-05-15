@@ -119,3 +119,83 @@ switch (day) {
   default:
     console.log("No time to relax this week");
 }
+
+
+
+
+
+// REZOLVARE TEMA
+
+// Ex 1
+
+const numberFn = number => number % 2 ? number * 2 : number - 2;
+console.log(numberFn(5));
+
+
+// Ex 2
+
+const checkPrime = number => {
+ for (let div = 2; div * div <= number; div++) {
+   if (number % div === 0) return false;
+ }
+ return true;
+}
+
+function savePrimes(arr, primes = []) {
+  for (let i = 0; i < arr.length; i++) {
+    if (checkPrime(arr[i])) primes.push(arr[i]);
+  }
+  return primes;
+}
+console.log(savePrimes([2,4,6,3,5,7,11,13,17,31,37]));
+
+
+// Ex 3
+
+const saveString = function (arr,strings = []) {
+  arr.forEach( element => typeof element === 'string' && strings.push(element));
+  return strings;
+}
+console.log(saveString([1, '1', 'salut', 2,6,true, 'true']));
+
+// Ex 4
+
+const addDigits2 = (number, result = 0) => {
+  for ( let i = 0; i < number.length; i++) {
+    if (isNaN(Number(number[i])) || number % 2 === 0) continue;
+    result += + number[i];
+  }
+  return result;
+}
+
+console.log(addDigits2("1523bc"));
+
+
+// Ex 5
+
+( date => {
+  switch (date) {
+    case 0:
+      console.log("It is Sunday!");
+      break;
+    case 1:
+      console.log("It is Monday again...");
+      break;
+    case 2:
+      console.log("It is Tuesday!");
+      break;
+    case 3:  
+      console.log("It is Wednesday!");
+      break;
+    case 4:
+      console.log("It is Thursday!");
+      break;
+    case 5:
+      // console.log("It is Friday!");
+    case 6:
+      console.log("Sunday is near!");
+      break;
+    default:
+      console.log("This must be a bug ...");
+  }
+})(new Date().getDay())
